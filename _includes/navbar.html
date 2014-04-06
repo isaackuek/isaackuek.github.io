@@ -1,0 +1,47 @@
+    <div id="header" class="row">
+      <div class="large-12 columns">
+        <a href="/" class=""><h1>InfoVis</h1></a>
+        
+        <nav class="top-bar" data-topbar>
+
+          <section class="top-bar-section">
+            <ul class="left">
+              <li class="has-dropdown">
+                <a href="/final">Final Infographic</a>
+                <ul class="dropdown">
+                  <li><a href="/video">Video</a></li>
+                </ul>
+              </li>
+
+              <li><a href="/models">Models</a></li>
+
+              <li class="has-dropdown">
+                <a href="/design">Design Process</a>
+                <ul class="dropdown">
+                  <li><a href="/design/numbers">Numbers</a></li>
+                  <li><a href="/design/location">Location</a></li>
+                  <li><a href="/design/appearance">Appearance</a></li>
+                  <li><a href="/design/relationships">Relationships</a></li>
+                  <li><a href="/design/time">Time</a></li>
+                  <li><a href="/design/layout">Layout</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </section>
+        </nav>
+        <br>
+        <h3>
+          {% if page.title == 'Models' %}
+            Model infographics
+          {% elsif page.tags == 'Design' %}
+            Displays that exploit the visual potential of <em>{{ page.title | downcase }}</em>
+          {% else %}
+            {{ page.title }}
+          {% endif %}
+        </h3>
+        <hr>
+      </div>
+
+
+    </div>
