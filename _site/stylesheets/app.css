@@ -1,7 +1,8 @@
 /* Sources p tag */
-.sources {
+.sources, .copyright {
   font-size: 80%;
 }
+
 
 /* line 260, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
