@@ -9,7 +9,6 @@ _site/
 .DS_Store
 bbin/
 gh-pages/
-_site/*.*
 coverage
 .ruby-version
 .sass-cache
